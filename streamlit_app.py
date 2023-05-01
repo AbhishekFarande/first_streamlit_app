@@ -53,7 +53,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 
 streamlit.text("The fruit load list contains:")
-def get_fruit_Load_list():
+def get_fruit_load_list():
    with  my_cnx.cursor() as my_cur:
       my_cur.execute("SELECT * FROM fruit_load_list")
       return my_cur.fetchall()
